@@ -3,7 +3,7 @@ lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(r
 lga = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold red)%an%C(reset) %C(bold green)%D%C(reset)' --all
 
 [core]
-    autocrlf = true
+    autocrlf = false
     editor = code --wait
 
 [pull]
