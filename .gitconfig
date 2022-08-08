@@ -9,7 +9,7 @@ dad = !curl https://icanhazdadjoke.com/ && git add
 
 [user]
     name = Anthony Martin
-    email = anthony.ct.martin@gmail.com
+    email = 38542602+anthony-c-martin@users.noreply.github.com
 
 [pull]
     rebase = true
