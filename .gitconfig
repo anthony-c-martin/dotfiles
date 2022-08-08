@@ -8,6 +8,10 @@ dad = !curl https://icanhazdadjoke.com/ && git add
     autocrlf = false
     editor = code --wait
 
+[user]
+    name = Anthony Martin
+    email = anthony.ct.martin@gmail.com
+
 [pull]
     rebase = true
 
