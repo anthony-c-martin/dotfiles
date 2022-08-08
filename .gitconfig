@@ -11,6 +11,9 @@ dad = !curl https://icanhazdadjoke.com/ && git add
 [pull]
     rebase = true
 
+[push]
+    autoSetupRemote = true
+
 [diff]
     tool = vscode
 [difftool "vscode"]
@@ -21,4 +24,4 @@ dad = !curl https://icanhazdadjoke.com/ && git add
 [mergetool "vscode"]
     cmd = code --wait $MERGED
 [mergetool]
-	keepBackup = false
+    keepBackup = false
