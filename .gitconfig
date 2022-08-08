@@ -3,7 +3,6 @@ lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(r
 lga = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold red)%an%C(reset) %C(bold green)%D%C(reset)' --all
 dad = !curl https://icanhazdadjoke.com/ && git add
 
-
 [core]
     autocrlf = false
     editor = code --wait
