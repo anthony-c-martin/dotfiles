@@ -2,6 +2,7 @@
 lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold red)%an%C(reset) %C(bold green)%D%C(reset)' --branches
 lga = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold red)%an%C(reset) %C(bold green)%D%C(reset)' --all
 dad = !curl https://icanhazdadjoke.com/ && git add
+jdiff = difftool -t jsondiff -y
 
 [core]
     autocrlf = false
@@ -20,7 +21,9 @@ dad = !curl https://icanhazdadjoke.com/ && git add
 [diff]
     tool = vscode
 [difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = "code --wait --diff $LOCAL $REMOTE"
+[difftool "jsondiff"]
+	cmd = "npx -y json-diff $LOCAL $REMOTE"
 
 [merge]
     tool = vscode
