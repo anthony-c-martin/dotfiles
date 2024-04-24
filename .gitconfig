@@ -5,6 +5,7 @@ dad = !curl https://icanhazdadjoke.com/ && git add
 jdiff = difftool -t jsondiff -y
 
 [core]
+    safecrlf = warn
     autocrlf = false
     editor = code --wait
 
