@@ -32,3 +32,5 @@ jdiff = difftool -t jsondiff -y
     cmd = code --wait $MERGED
 [mergetool]
     keepBackup = false
+[credential]
+    azreposCredentialType = oauth
