@@ -4,23 +4,49 @@ lga = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(
 dad = !curl https://icanhazdadjoke.com/ && git add
 jdiff = difftool -t jsondiff -y
 
-[core]
-    safecrlf = warn
-    autocrlf = false
-    editor = code --wait
-
 [user]
     name = Anthony Martin
     email = 38542602+anthony-c-martin@users.noreply.github.com
 
+[help]
+    autocorrect = prompt
+[core]
+    autocrlf = false
+    editor = code --wait
+[commit]
+    verbose = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
 [pull]
     rebase = true
-
 [push]
+    default = simple
     autoSetupRemote = true
+[rerere]
+    enabled = true
+    autoupdate = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[tag]
+    sort = version:refname
+[init]
+    defaultBranch = main
 
 [diff]
     tool = vscode
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 [difftool "vscode"]
     cmd = "code --wait --diff $LOCAL $REMOTE"
 [difftool "jsondiff"]
@@ -32,5 +58,3 @@ jdiff = difftool -t jsondiff -y
     cmd = code --wait $MERGED
 [mergetool]
     keepBackup = false
-[credential]
-    azreposCredentialType = oauth
