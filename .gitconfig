@@ -13,6 +13,8 @@ jdiff = difftool -t jsondiff -y
 [core]
     autocrlf = false
     editor = code --wait
+    fsmonitor = true
+    untrackedCache = true
 [commit]
     verbose = true
 [fetch]
