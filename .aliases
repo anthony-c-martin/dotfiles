@@ -1,3 +1,5 @@
 alias installdotnet="bash <(curl -Ls https://dot.net/v1/dotnet-install.sh)"
 alias installbicepcli="bash <(curl -Ls https://aka.ms/bicep/nightly-cli.sh)"
 alias installbicepvsix="bash <(curl -Ls https://aka.ms/bicep/nightly-vsix.sh)"
+
+alias gs="git status"
