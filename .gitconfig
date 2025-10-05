@@ -15,6 +15,7 @@ jdiff = difftool -t jsondiff -y
     editor = code --wait
     fsmonitor = true
     untrackedCache = true
+	longpaths = true
 [commit]
     verbose = true
 [fetch]
