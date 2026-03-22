@@ -12,6 +12,7 @@ jdiff = difftool -t jsondiff -y
     autocorrect = prompt
 [core]
     autocrlf = false
+    safecrlf = false
     editor = code --wait
     fsmonitor = true
     untrackedCache = true
