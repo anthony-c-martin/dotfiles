@@ -3,6 +3,7 @@ lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(r
 lga = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold red)%an%C(reset) %C(bold green)%D%C(reset)' --all
 dad = !curl https://icanhazdadjoke.com/ && git add
 jdiff = difftool -t jsondiff -y
+clone-mini = clone --filter=blob:none --no-checkout --depth 1 --sparse
 
 [user]
     name = Anthony Martin
